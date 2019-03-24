@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/rvPremier"
+        android:icon="@drawable/premier"
+        android:title="Premier League" />
+
+    <item
+        android:id="@+id/rvLaliga"
+        android:icon="@drawable/laliga"
+        android:title="LaLiga" />
+
+    <item
+        android:id="@+id/rvBundes"
+        android:icon="@drawable/bundesliga"
+        android:title="Bundesliga" />
+
+</menu>

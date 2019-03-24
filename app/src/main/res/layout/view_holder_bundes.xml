@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewholder.BundesViewHolder"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bundes_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/tv_bundes_nama_club"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Club"
+            android:textSize="20sp"
+            android:fontFamily="@font/myfont"
+            android:layout_alignTop="@id/img_bundes_logo"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/img_bundes_logo"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_bundes_nama_stadium"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/myfont"
+            android:layout_height="wrap_content"
+            android:text="Nama Stadium"
+            android:layout_toRightOf="@id/img_bundes_logo"
+            android:layout_alignBottom="@id/img_bundes_logo"/>
+
+        <TextView
+            android:id="@+id/tv_bundes_lokasi_stadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Stadium"
+            android:fontFamily="@font/myfont"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/img_bundes_logo"
+            android:layout_marginRight="20sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
