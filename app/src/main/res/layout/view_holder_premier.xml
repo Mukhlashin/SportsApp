@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewholder.PremierViewHolder"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".viewholder.PremierViewHolder">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,37 +16,44 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="20dp"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/tv_premier_nama_club"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama Club"
-            android:textSize="20sp"
             android:layout_alignTop="@id/img_premier_logo"
-            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="37dp"
             android:layout_toRightOf="@+id/img_premier_logo"
-            android:layout_centerInParent="true"/>
+            android:text="Nama Club"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_premier_nama_stadium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Stadium"
-            android:layout_toRightOf="@id/img_premier_logo"
-            android:layout_alignBottom="@id/img_premier_logo"/>
+            android:layout_alignTop="@id/img_premier_logo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Nama Stadium" />
 
         <TextView
             android:id="@+id/tv_premier_lokasi_stadium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lokasi Stadium"
+            android:layout_alignBottom="@id/img_premier_logo"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignBottom="@id/img_premier_logo"
-            android:layout_marginRight="20sp"/>
+            android:layout_marginRight="20sp"
+            android:text="Lokasi Stadium" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
 
 </LinearLayout>

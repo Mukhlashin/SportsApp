@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Splash"
     android:orientation="vertical"
-    android:background="@android:color/holo_orange_dark">
+    android:background="@drawable/gradient_1">
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/soccerball"
         android:layout_gravity="center"
+        android:id="@+id/img_splash"
         android:layout_marginTop="160dp"/>
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="100dp"
         android:background="@drawable/loading2"
         android:layout_height="100dp"
+        android:id="@+id/gif_splash"
         android:layout_gravity="center"/>
 
     <TextView
@@ -26,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="SportsApp"
         android:gravity="center"
+        android:id="@+id/tv_splash"
         android:textSize="30sp"
         android:fontFamily="@font/namesmile" />
 
